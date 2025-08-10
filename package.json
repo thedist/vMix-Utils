@@ -1,0 +1,33 @@
+{
+  "name": "@distdev/vmix-utils",
+  "version": "1.0.0",
+  "description": "Utility functions and data for vMix",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "yarn build:watch",
+    "build": "rimraf dist && yarn build:main",
+    "build:main": "tsc -p tsconfig.build.json",
+    "build:watch": "tsc -p tsconfig.build.json --watch",
+    "build:test": "tsc -p tsconfig.build.json --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedist/vMix-Utils.git"
+  },
+  "keywords": [
+    "vmix"
+  ],
+  "author": "Jeff Martin <dist@dist.dev> (https://dist.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thedist/vMix-Utils/issues"
+  },
+  "homepage": "https://github.com/thedist/vMix-Utils",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.2"
+  }
+}
