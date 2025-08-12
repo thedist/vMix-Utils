@@ -1,8 +1,8 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsPreset = 'LastPreset' | 'OpenPreset' | 'SavePreset'
+export type FunctionIDsPreset = 'LastPreset' | 'OpenPreset' | 'SavePreset'
 
-export const FunctionsPreset: VMixShortcut[] = [
+export const FunctionsPreset: VMixFunction[] = [
   {
     id: 'LastPreset',
     category: 'Preset',

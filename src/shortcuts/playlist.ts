@@ -1,8 +1,8 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsPlayList = 'NextPlayListEntry' | 'PreviousPlayListEntry' | 'SelectPlayList' | 'StartPlayList' | 'StopPlayList'
+export type FunctionIDsPlayList = 'NextPlayListEntry' | 'PreviousPlayListEntry' | 'SelectPlayList' | 'StartPlayList' | 'StopPlayList'
 
-export const FunctionsPlayList: VMixShortcut[] = [
+export const FunctionsPlayList: VMixFunction[] = [
   {
     id: 'NextPlayListEntry',
     category: 'PlayList',

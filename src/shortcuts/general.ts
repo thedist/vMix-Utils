@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsGeneral =
+export type FunctionIDsGeneral =
   | 'ActivatorRefresh'
   | 'CallManagerShowHide'
   | 'KeyPress'
@@ -11,7 +11,7 @@ export type ShortcutIDsGeneral =
   | 'SetDynamicValue4'
   | 'Undo'
 
-export const FunctionsGeneral: VMixShortcut[] = [
+export const FunctionsGeneral: VMixFunction[] = [
   {
     id: 'ActivatorRefresh',
     category: 'General',

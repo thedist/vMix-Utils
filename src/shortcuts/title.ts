@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsTitle =
+export type FunctionIDsTitle =
   | 'AdjustCountdown'
   | 'ChangeCountdown'
   | 'NextTitlePreset'
@@ -26,7 +26,7 @@ export type ShortcutIDsTitle =
   | 'SuspendCountdown'
   | 'TitleBeginAnimation'
 
-export const FunctionsTitle: VMixShortcut[] = [
+export const FunctionsTitle: VMixFunction[] = [
   {
     id: 'AdjustCountdown',
     category: 'Title',

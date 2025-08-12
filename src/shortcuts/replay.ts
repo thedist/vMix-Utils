@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsReplay =
+export type FunctionIDsReplay =
   | 'ReplayACamera1'
   | 'ReplayACamera2'
   | 'ReplayACamera3'
@@ -154,7 +154,7 @@ export type ShortcutIDsReplay =
   | 'ReplayUpdateSelectedSpeedDefault'
   | 'ReplayUpdateSelectedSpeedFromValue'
 
-export const FunctionsReplay: VMixShortcut[] = [
+export const FunctionsReplay: VMixFunction[] = [
   {
     id: 'ReplayACamera1',
     category: 'Replay',

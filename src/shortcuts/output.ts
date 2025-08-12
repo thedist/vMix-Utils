@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsOutput =
+export type FunctionIDsOutput =
   | 'Fullscreen'
   | 'FullscreenOff'
   | 'FullscreenOn'
@@ -33,7 +33,7 @@ export type ShortcutIDsOutput =
   | 'StreamingSetUsername'
   | 'WriteDurationToRecordingLog'
 
-export const FunctionsOutput: VMixShortcut[] = [
+export const FunctionsOutput: VMixFunction[] = [
   {
     id: 'Fullscreen',
     category: 'Output',

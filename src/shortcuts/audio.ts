@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsAudio =
+export type FunctionIDsAudio =
   | 'Audio'
   | 'AudioAuto'
   | 'AudioAutoOff'
@@ -109,7 +109,7 @@ export type ShortcutIDsAudio =
   | 'SoloPFLOff'
   | 'SoloPFLOn'
 
-export const FunctionsAudio: VMixShortcut[] = [
+export const FunctionsAudio: VMixFunction[] = [
   {
     id: 'Audio',
     category: 'Audio',

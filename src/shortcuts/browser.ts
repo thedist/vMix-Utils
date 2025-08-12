@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsBrowser =
+export type FunctionIDsBrowser =
   | 'BrowserBack'
   | 'BrowserForward'
   | 'BrowserKeyboardDisabled'
@@ -10,7 +10,7 @@ export type ShortcutIDsBrowser =
   | 'BrowserNavigate'
   | 'BrowserReload'
 
-export const FunctionsBrowser: VMixShortcut[] = [
+export const FunctionsBrowser: VMixFunction[] = [
   {
     id: 'BrowserBack',
     category: 'Browser',

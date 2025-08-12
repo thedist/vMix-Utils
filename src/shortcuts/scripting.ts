@@ -1,8 +1,8 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsScripting = 'ScriptStart' | 'ScriptStartDynamic' | 'ScriptStop' | 'ScriptStopAll' | 'ScriptStopDynamic'
+export type FunctionIDsScripting = 'ScriptStart' | 'ScriptStartDynamic' | 'ScriptStop' | 'ScriptStopAll' | 'ScriptStopDynamic'
 
-export const FunctionsScripting: VMixShortcut[] = [
+export const FunctionsScripting: VMixFunction[] = [
   {
     id: 'ScriptStart',
     category: 'Scripting',

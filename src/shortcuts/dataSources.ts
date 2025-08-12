@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsDataSources =
+export type FunctionIDsDataSources =
   | 'DataSourceAutoNextOff'
   | 'DataSourceAutoNextOn'
   | 'DataSourceAutoNextOnOff'
@@ -11,7 +11,7 @@ export type ShortcutIDsDataSources =
   | 'DataSourcePreviousRow'
   | 'DataSourceSelectRow'
 
-export const FunctionsDataSources: VMixShortcut[] = [
+export const FunctionsDataSources: VMixFunction[] = [
   {
     id: 'DataSourceAutoNextOff',
     category: 'DataSources',

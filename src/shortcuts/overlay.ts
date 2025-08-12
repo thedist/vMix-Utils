@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsOverlay =
+export type FunctionIDsOverlay =
   | 'MoveMultiViewOverlay'
   | 'MultiViewOverlay'
   | 'MultiViewOverlayOff'
@@ -36,7 +36,7 @@ export type ShortcutIDsOverlay =
   | 'PreviewOverlayInput4'
   | 'SetMultiViewOverlay'
 
-export const FunctionsOverlay: VMixShortcut[] = [
+export const FunctionsOverlay: VMixFunction[] = [
   {
     id: 'MoveMultiViewOverlay',
     category: 'Overlay',

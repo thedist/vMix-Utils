@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsPTZ =
+export type FunctionIDsPTZ =
   | 'PTZCreateVirtualInput'
   | 'PTZFocusAuto'
   | 'PTZFocusFar'
@@ -24,7 +24,7 @@ export type ShortcutIDsPTZ =
   | 'PTZZoomOut'
   | 'PTZZoomStop'
 
-export const FunctionsPTZ: VMixShortcut[] = [
+export const FunctionsPTZ: VMixFunction[] = [
   {
     id: 'PTZCreateVirtualInput',
     category: 'PTZ',

@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsInput =
+export type FunctionIDsInput =
   | 'ActiveInput'
   | 'AddInput'
   | 'AutoPauseOff'
@@ -277,7 +277,7 @@ export type ShortcutIDsInput =
   | 'ZoomSelectParticipantByName'
   | 'ZoomUnMuteSelf'
 
-export const FunctionsInput: VMixShortcut[] = [
+export const FunctionsInput: VMixFunction[] = [
   {
     id: 'ActiveInput',
     category: 'Input',

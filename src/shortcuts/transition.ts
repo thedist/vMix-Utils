@@ -1,6 +1,6 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsTransition =
+export type FunctionIDsTransition =
   | 'Fade'
   | 'Zoom'
   | 'Wipe'
@@ -45,7 +45,7 @@ export type ShortcutIDsTransition =
   | 'Transition3'
   | 'Transition4'
 
-export const FunctionsTransition: VMixShortcut[] = [
+export const FunctionsTransition: VMixFunction[] = [
   {
     id: 'Fade',
     category: 'Transition',

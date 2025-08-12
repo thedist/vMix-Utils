@@ -1,8 +1,8 @@
-import { type VMixShortcut } from '.'
+import { type VMixFunction } from '.'
 
-export type ShortcutIDsNDI = 'NDICommand' | 'NDISelectSourceByIndex' | 'NDISelectSourceByName' | 'NDIStartRecording' | 'NDIStopRecording'
+export type FunctionIDsNDI = 'NDICommand' | 'NDISelectSourceByIndex' | 'NDISelectSourceByName' | 'NDIStartRecording' | 'NDIStopRecording'
 
-export const FunctionsNDI: VMixShortcut[] = [
+export const FunctionsNDI: VMixFunction[] = [
   {
     id: 'NDICommand',
     category: 'NDI',
