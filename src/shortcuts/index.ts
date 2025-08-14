@@ -63,6 +63,7 @@ export type FunctionParams = {
   description?: string
   required: boolean
   range?: EnumRange | IntRange | NumberRange
+  multiline?: boolean
 }
 
 type EnumRange = {

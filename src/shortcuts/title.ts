@@ -322,6 +322,7 @@ export const FunctionsTitle: VMixFunction[] = [
         name: 'Value',
         description: 'Text',
         required: false,
+        multiline: true,
       },
       {
         name: 'SelectedIndex',

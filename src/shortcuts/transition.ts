@@ -67,7 +67,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -100,7 +100,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -133,7 +133,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -166,7 +166,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -199,7 +199,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -232,7 +232,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -265,7 +265,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -298,7 +298,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -331,7 +331,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -364,7 +364,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -397,7 +397,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -430,7 +430,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -463,7 +463,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -496,7 +496,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -529,7 +529,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -562,7 +562,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -595,7 +595,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -628,7 +628,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
@@ -661,7 +661,7 @@ export const FunctionsTransition: VMixFunction[] = [
       },
       {
         name: 'Mix',
-        description: 'Mix 0 is the Main mix, values 1 to 3 are for additional mixes that are labeled 2 to 4 in vMix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
         default: 0,
         required: true,
         range: {
