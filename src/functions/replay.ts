@@ -9,6 +9,10 @@ export type FunctionIDsReplay =
   | 'ReplayACamera6'
   | 'ReplayACamera7'
   | 'ReplayACamera8'
+  | 'ReplayAppendLastEventText'
+  | 'ReplayAppendLastEventTextCamera'
+  | 'ReplayAppendSelectedEventText'
+  | 'ReplayAppendSelectedEventTextCamera'
   | 'ReplayBCamera1'
   | 'ReplayBCamera2'
   | 'ReplayBCamera3'
@@ -25,10 +29,26 @@ export type FunctionIDsReplay =
   | 'ReplayCamera6'
   | 'ReplayCamera7'
   | 'ReplayCamera8'
+  | 'ReplayCCamera1'
+  | 'ReplayCCamera2'
+  | 'ReplayCCamera3'
+  | 'ReplayCCamera4'
+  | 'ReplayCCamera5'
+  | 'ReplayCCamera6'
+  | 'ReplayCCamera7'
+  | 'ReplayCCamera8'
   | 'ReplayChangeDirection'
   | 'ReplayChangeSpeed'
   | 'ReplayCopyLastEvent'
   | 'ReplayCopySelectedEvent'
+  | 'ReplayDCamera1'
+  | 'ReplayDCamera2'
+  | 'ReplayDCamera3'
+  | 'ReplayDCamera4'
+  | 'ReplayDCamera5'
+  | 'ReplayDCamera6'
+  | 'ReplayDCamera7'
+  | 'ReplayDCamera8'
   | 'ReplayDeleteLastEvent'
   | 'ReplayDeleteSelectedEvent'
   | 'ReplayDuplicateLastEvent'
@@ -80,6 +100,8 @@ export type FunctionIDsReplay =
   | 'ReplayPlayPrevious'
   | 'ReplayPlaySelectedEvent'
   | 'ReplayPlaySelectedEventToOutput'
+  | 'ReplayQuadModeOff'
+  | 'ReplayQuadModeOn'
   | 'ReplayRecorded'
   | 'ReplayScrollSelectedEvent'
   | 'ReplaySelectAllEvents'
@@ -140,6 +162,7 @@ export type FunctionIDsReplay =
   | 'ReplayToggleLastEventCamera6'
   | 'ReplayToggleLastEventCamera7'
   | 'ReplayToggleLastEventCamera8'
+  | 'ReplayToggleQuadMode'
   | 'ReplayToggleSelectedEventCamera1'
   | 'ReplayToggleSelectedEventCamera2'
   | 'ReplayToggleSelectedEventCamera3'
@@ -196,6 +219,56 @@ export const FunctionsReplay: VMixFunction[] = [
     category: 'Replay',
     params: [],
     version: '24',
+  },
+  {
+    id: 'ReplayAppendLastEventText',
+    category: 'Replay',
+    params: [
+      {
+        name: 'Value',
+        description: 'Text',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'ReplayAppendLastEventTextCamera',
+    category: 'Replay',
+    description: 'Adds the text to the specified angle (1-4), example: 3,angle3text',
+    params: [
+      {
+        name: 'Value',
+        description: 'Camera,Text',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'ReplayAppendSelectedEventText',
+    category: 'Replay',
+    params: [
+      {
+        name: 'Value',
+        description: 'Text',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'ReplayAppendSelectedEventTextCamera',
+    category: 'Replay',
+    description: 'Adds the text to the specified angle (1-4), example: 3,angle3text',
+    params: [
+      {
+        name: 'Value',
+        description: 'Camera,Text',
+        required: false,
+      },
+    ],
+    version: '29',
   },
   {
     id: 'ReplayACamera8',
@@ -300,6 +373,54 @@ export const FunctionsReplay: VMixFunction[] = [
     version: 'ReplayACamera5',
   },
   {
+    id: 'ReplayCCamera1',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayCCamera2',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayCCamera3',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayCCamera4',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayCCamera5',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayCCamera6',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayCCamera7',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayCCamera8',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
     id: 'ReplayChangeDirection',
     category: 'Replay',
     params: [
@@ -372,6 +493,54 @@ export const FunctionsReplay: VMixFunction[] = [
       },
     ],
     version: '21',
+  },
+  {
+    id: 'ReplayDCamera1',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayDCamera2',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayDCamera3',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayDCamera4',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayDCamera5',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayDCamera6',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayDCamera7',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayDCamera8',
+    category: 'Replay',
+    params: [],
+    version: '29',
   },
   {
     id: 'ReplayDeleteLastEvent',
@@ -1168,6 +1337,18 @@ export const FunctionsReplay: VMixFunction[] = [
     version: '21',
   },
   {
+    id: 'ReplayQuadModeOff',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'ReplayQuadModeOn',
+    category: 'Replay',
+    params: [],
+    version: '29',
+  },
+  {
     id: 'ReplayRecorded',
     category: 'Replay',
     params: [],
@@ -1184,7 +1365,7 @@ export const FunctionsReplay: VMixFunction[] = [
         required: true,
       },
     ],
-    version: '2',
+    version: '27',
   },
   {
     id: 'ReplaySelectAllEvents',
@@ -1905,6 +2086,12 @@ export const FunctionsReplay: VMixFunction[] = [
     category: 'Replay',
     params: [],
     version: '24',
+  },
+  {
+    id: 'ReplayToggleQuadMode',
+    category: 'Replay',
+    params: [],
+    version: '29',
   },
   {
     id: 'ReplayToggleSelectedEventCamera1',

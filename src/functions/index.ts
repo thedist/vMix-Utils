@@ -4,6 +4,7 @@ import { FunctionsDataSources, type FunctionIDsDataSources } from './dataSources
 import { FunctionsGeneral, type FunctionIDsGeneral } from './general'
 import { FunctionsInput, type FunctionIDsInput } from './input'
 import { FunctionsNDI, type FunctionIDsNDI } from './ndi'
+import { FunctionsOMT, type FunctionIDsOMT } from './omt'
 import { FunctionsOutput, type FunctionIDsOutput } from './output'
 import { FunctionsOverlay, type FunctionIDsOverlay } from './overlay'
 import { FunctionsPlayList, type FunctionIDsPlayList } from './playlist'
@@ -26,6 +27,7 @@ export type Category =
   | 'Scripting'
   | 'Replay'
   | 'NDI'
+  | 'OMT'
   | 'PTZ'
   | 'Preset'
   | 'DataSources'
@@ -47,6 +49,7 @@ export type FunctionIDs =
   | FunctionIDsGeneral
   | FunctionIDsInput
   | FunctionIDsNDI
+  | FunctionIDsOMT
   | FunctionIDsOutput
   | FunctionIDsOverlay
   | FunctionIDsPlayList
@@ -95,6 +98,7 @@ export const functions: VMixFunction[] = [
   ...FunctionsScripting,
   ...FunctionsReplay,
   ...FunctionsNDI,
+  ...FunctionsOMT,
   ...FunctionsPTZ,
   ...FunctionsPreset,
   ...FunctionsDataSources,

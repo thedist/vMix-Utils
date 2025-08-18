@@ -28,6 +28,10 @@ export type FunctionIDsTransition =
   | 'SetStingerGTInput2'
   | 'SetStingerGTInput3'
   | 'SetStingerGTInput4'
+  | 'SetStingerGTInput5'
+  | 'SetStingerGTInput6'
+  | 'SetStingerGTInput7'
+  | 'SetStingerGTInput8'
   | 'SetTransitionDuration1'
   | 'SetTransitionDuration2'
   | 'SetTransitionDuration3'
@@ -40,6 +44,10 @@ export type FunctionIDsTransition =
   | 'Stinger2'
   | 'Stinger3'
   | 'Stinger4'
+  | 'Stinger5'
+  | 'Stinger6'
+  | 'Stinger7'
+  | 'Stinger8'
   | 'Transition1'
   | 'Transition2'
   | 'Transition3'
@@ -784,6 +792,62 @@ export const FunctionsTransition: VMixFunction[] = [
     version: '28',
   },
   {
+    id: 'SetStingerGTInput5',
+    category: 'Transition',
+    description: 'Assign GT Input as animation source for Stinger 5',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: true,
+      },
+    ],
+
+    version: '29',
+  },
+  {
+    id: 'SetStingerGTInput6',
+    category: 'Transition',
+    description: 'Assign GT Input as animation source for Stinger 6',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: true,
+      },
+    ],
+
+    version: '29',
+  },
+  {
+    id: 'SetStingerGTInput7',
+    category: 'Transition',
+    description: 'Assign GT Input as animation source for Stinger 7',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: true,
+      },
+    ],
+
+    version: '29',
+  },
+  {
+    id: 'SetStingerGTInput8',
+    category: 'Transition',
+    description: 'Assign GT Input as animation source for Stinger 8',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: true,
+      },
+    ],
+
+    version: '29',
+  },
+  {
     id: 'SetTransitionDuration1',
     category: 'Transition',
     description: 'Change Transition Duration for Button 1',
@@ -1069,7 +1133,72 @@ export const FunctionsTransition: VMixFunction[] = [
       },
     ],
 
-    version: '42',
+    version: '24',
+  },
+  {
+    id: 'Stinger4',
+    category: 'Transition',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+
+    version: '24',
+  },
+  {
+    id: 'Stinger5',
+    category: 'Transition',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+
+    version: '29',
+  },
+  {
+    id: 'Stinger6',
+    category: 'Transition',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+
+    version: '29',
+  },
+  {
+    id: 'Stinger7',
+    category: 'Transition',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+
+    version: '29',
+  },
+  {
+    id: 'Stinger8',
+    category: 'Transition',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+
+    version: '29',
   },
   {
     id: 'Transition1',

@@ -29,11 +29,39 @@ export type FunctionIDsOverlay =
   | 'OverlayInput4Off'
   | 'OverlayInput4Out'
   | 'OverlayInput4Zoom'
+  | 'OverlayInput5'
+  | 'OverlayInput5In'
+  | 'OverlayInput5Last'
+  | 'OverlayInput5Off'
+  | 'OverlayInput5Out'
+  | 'OverlayInput5Zoom'
+  | 'OverlayInput6'
+  | 'OverlayInput6In'
+  | 'OverlayInput6Last'
+  | 'OverlayInput6Off'
+  | 'OverlayInput6Out'
+  | 'OverlayInput6Zoom'
+  | 'OverlayInput7'
+  | 'OverlayInput7In'
+  | 'OverlayInput7Last'
+  | 'OverlayInput7Off'
+  | 'OverlayInput7Out'
+  | 'OverlayInput7Zoom'
+  | 'OverlayInput8'
+  | 'OverlayInput8In'
+  | 'OverlayInput8Last'
+  | 'OverlayInput8Off'
+  | 'OverlayInput8Out'
+  | 'OverlayInput8Zoom'
   | 'OverlayInputAllOff'
   | 'PreviewOverlayInput1'
   | 'PreviewOverlayInput2'
   | 'PreviewOverlayInput3'
   | 'PreviewOverlayInput4'
+  | 'PreviewOverlayInput5'
+  | 'PreviewOverlayInput6'
+  | 'PreviewOverlayInput7'
+  | 'PreviewOverlayInput8'
   | 'SetMultiViewOverlay'
 
 export const FunctionsOverlay: VMixFunction[] = [
@@ -326,6 +354,222 @@ export const FunctionsOverlay: VMixFunction[] = [
     version: '21',
   },
   {
+    id: 'OverlayInput5',
+    category: 'Overlay',
+    description: 'Toggle Overlay4 On/Off with selected Input using configured Transition',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput5In',
+    category: 'Overlay',
+    description: 'Transition Out to Overlay4 with selected Input',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput5Last',
+    category: 'Overlay',
+    description: 'Toggle Overlay 4 On/Off with last used Input on this channel',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput5Off',
+    category: 'Overlay',
+    description: 'Immediately switch Overlay4 Off (Cut)',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput5Out',
+    category: 'Overlay',
+    description: 'Transition Out Overlay4',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput5Zoom',
+    category: 'Overlay',
+    description: 'Zooms PIP Overlay to fill Fullscreen and vice versa',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput6',
+    category: 'Overlay',
+    description: 'Toggle Overlay4 On/Off with selected Input using configured Transition',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput6In',
+    category: 'Overlay',
+    description: 'Transition Out to Overlay4 with selected Input',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput6Last',
+    category: 'Overlay',
+    description: 'Toggle Overlay 4 On/Off with last used Input on this channel',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput6Off',
+    category: 'Overlay',
+    description: 'Immediately switch Overlay4 Off (Cut)',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput6Out',
+    category: 'Overlay',
+    description: 'Transition Out Overlay4',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput6Zoom',
+    category: 'Overlay',
+    description: 'Zooms PIP Overlay to fill Fullscreen and vice versa',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput7',
+    category: 'Overlay',
+    description: 'Toggle Overlay4 On/Off with selected Input using configured Transition',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput7In',
+    category: 'Overlay',
+    description: 'Transition Out to Overlay4 with selected Input',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput7Last',
+    category: 'Overlay',
+    description: 'Toggle Overlay 4 On/Off with last used Input on this channel',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput7Off',
+    category: 'Overlay',
+    description: 'Immediately switch Overlay4 Off (Cut)',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput7Out',
+    category: 'Overlay',
+    description: 'Transition Out Overlay4',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput7Zoom',
+    category: 'Overlay',
+    description: 'Zooms PIP Overlay to fill Fullscreen and vice versa',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput8',
+    category: 'Overlay',
+    description: 'Toggle Overlay4 On/Off with selected Input using configured Transition',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput8In',
+    category: 'Overlay',
+    description: 'Transition Out to Overlay4 with selected Input',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput8Last',
+    category: 'Overlay',
+    description: 'Toggle Overlay 4 On/Off with last used Input on this channel',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput8Off',
+    category: 'Overlay',
+    description: 'Immediately switch Overlay4 Off (Cut)',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput8Out',
+    category: 'Overlay',
+    description: 'Transition Out Overlay4',
+    params: [],
+    version: '29',
+  },
+  {
+    id: 'OverlayInput8Zoom',
+    category: 'Overlay',
+    description: 'Zooms PIP Overlay to fill Fullscreen and vice versa',
+    params: [],
+    version: '29',
+  },
+  {
     id: 'OverlayInputAllOff',
     category: 'Overlay',
     description: 'Immediately switch all Overlays Off',
@@ -383,6 +627,58 @@ export const FunctionsOverlay: VMixFunction[] = [
       },
     ],
     version: '21',
+  },
+  {
+    id: 'PreviewOverlayInput5',
+    category: 'Overlay',
+    description: 'Preview Overlay4 using the selected Input',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'PreviewOverlayInput6',
+    category: 'Overlay',
+    description: 'Preview Overlay4 using the selected Input',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'PreviewOverlayInput7',
+    category: 'Overlay',
+    description: 'Preview Overlay4 using the selected Input',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
+  },
+  {
+    id: 'PreviewOverlayInput8',
+    category: 'Overlay',
+    description: 'Preview Overlay4 using the selected Input',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
   },
   {
     id: 'SetMultiViewOverlay',

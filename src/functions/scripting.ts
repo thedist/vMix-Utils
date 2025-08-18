@@ -13,7 +13,6 @@ export const FunctionsScripting: VMixFunction[] = [
         required: true,
       },
     ],
-    info: '',
     version: '21',
   },
   {
@@ -27,7 +26,6 @@ export const FunctionsScripting: VMixFunction[] = [
         required: true,
       },
     ],
-    info: '',
     version: '21',
   },
   {
@@ -40,21 +38,18 @@ export const FunctionsScripting: VMixFunction[] = [
         required: true,
       },
     ],
-    info: '',
     version: '21',
   },
   {
     id: 'ScriptStopAll',
     category: 'Scripting',
     params: [],
-    info: '',
     version: '21',
   },
   {
     id: 'ScriptStopDynamic',
     category: 'Scripting',
     params: [],
-    info: '',
     version: '21',
   },
 ]

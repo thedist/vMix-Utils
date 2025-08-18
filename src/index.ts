@@ -1,3 +1,3 @@
 export * from './activators'
-export * from './shortcuts'
+export * from './functions'
 
