@@ -4624,6 +4624,7 @@ export const FunctionsInput: VMixFunction[] = [
             'VerticalSlideReverse',
             'BarnDoor',
             'RollerDoor',
+            'AlphaFade',
           ],
         },
       },

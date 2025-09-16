@@ -19,6 +19,7 @@ export type FunctionIDsTransition =
   | 'VerticalSlideReverse'
   | 'BarnDoor'
   | 'RollerDoor'
+  | 'AlphaFade'
   | 'Cut'
   | 'CutDirect'
   | 'FadeToBlack'
@@ -649,6 +650,39 @@ export const FunctionsTransition: VMixFunction[] = [
     version: '21',
   },
   {
+    id: 'AlphaFade',
+    category: 'Transition',
+    params: [
+      {
+        name: 'Duration',
+        description: 'Milliseconds',
+        default: 1000,
+        required: false,
+        range: {
+          type: 'number',
+          min: 0,
+        },
+      },
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+      {
+        name: 'Mix',
+        description: 'Mix 0 to 15 (Mix 0 is the main vMix ouput)',
+        default: 0,
+        required: true,
+        range: {
+          type: 'enum',
+          values: [0, 1, 2, 3],
+        },
+      },
+    ],
+
+    version: '29',
+  },
+  {
     id: 'Cut',
     category: 'Transition',
     params: [
@@ -951,8 +985,11 @@ export const FunctionsTransition: VMixFunction[] = [
             'VerticalSlideReverse',
             'BarnDoor',
             'RollerDoor',
+            'AlphaFade',
             'Stinger1',
             'Stinger2',
+            'Stinger3',
+            'Stinger4',
           ],
         },
       },
@@ -992,8 +1029,11 @@ export const FunctionsTransition: VMixFunction[] = [
             'VerticalSlideReverse',
             'BarnDoor',
             'RollerDoor',
+            'AlphaFade',
             'Stinger1',
             'Stinger2',
+            'Stinger3',
+            'Stinger4',
           ],
         },
       },
@@ -1033,8 +1073,11 @@ export const FunctionsTransition: VMixFunction[] = [
             'VerticalSlideReverse',
             'BarnDoor',
             'RollerDoor',
+            'AlphaFade',
             'Stinger1',
             'Stinger2',
+            'Stinger3',
+            'Stinger4',
           ],
         },
       },
@@ -1074,8 +1117,11 @@ export const FunctionsTransition: VMixFunction[] = [
             'VerticalSlideReverse',
             'BarnDoor',
             'RollerDoor',
+            'AlphaFade',
             'Stinger1',
             'Stinger2',
+            'Stinger3',
+            'Stinger4',
           ],
         },
       },
