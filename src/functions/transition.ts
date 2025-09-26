@@ -1198,19 +1198,6 @@ export const FunctionsTransition: VMixFunction[] = [
     version: '24',
   },
   {
-    id: 'Stinger4',
-    category: 'Transition',
-    params: [
-      {
-        name: 'Input',
-        default: 'Preview',
-        required: false,
-      },
-    ],
-
-    version: '24',
-  },
-  {
     id: 'Stinger5',
     category: 'Transition',
     params: [
