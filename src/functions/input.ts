@@ -32,6 +32,7 @@ export type FunctionIDsInput =
   | 'Effect4'
   | 'Effect4Off'
   | 'Effect4On'
+  | 'GO'
   | 'InputPreviewHide'
   | 'InputPreviewShow'
   | 'InputPreviewShowHide'
@@ -682,6 +683,19 @@ export const FunctionsInput: VMixFunction[] = [
       },
     ],
     version: '27',
+  },
+  {
+    id: 'GO',
+    category: 'Input',
+    description: 'Trigger GO action on Input',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '29',
   },
   {
     id: 'InputPreviewHide',
