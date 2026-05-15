@@ -221,6 +221,12 @@ export const FunctionsReplay: VMixFunction[] = [
     version: '24',
   },
   {
+    id: 'ReplayACamera8',
+    category: 'Replay',
+    params: [],
+    version: '24',
+  },
+  {
     id: 'ReplayAppendLastEventText',
     category: 'Replay',
     params: [
@@ -269,12 +275,6 @@ export const FunctionsReplay: VMixFunction[] = [
       },
     ],
     version: '29',
-  },
-  {
-    id: 'ReplayACamera8',
-    category: 'Replay',
-    params: [],
-    version: '24',
   },
   {
     id: 'ReplayBCamera1',
