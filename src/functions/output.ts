@@ -7,6 +7,10 @@ export type FunctionIDsOutput =
   | 'SetOutput2'
   | 'SetOutput3'
   | 'SetOutput4'
+  | 'SetOutput5'
+  | 'SetOutput6'
+  | 'SetOutput7'
+  | 'SetOutput8'
   | 'SetOutputExternal2'
   | 'SetOutputFullscreen'
   | 'SetOutputFullscreen2'
@@ -68,7 +72,7 @@ export const FunctionsOutput: VMixFunction[] = [
         default: 'Output',
         range: {
           type: 'enum',
-          values: ['Output', 'Preview', 'MultiView', 'Input'],
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
         },
       },
     ],
@@ -90,7 +94,7 @@ export const FunctionsOutput: VMixFunction[] = [
         default: 'Output',
         range: {
           type: 'enum',
-          values: ['Output', 'Preview', 'MultiView', 'Input'],
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
         },
       },
     ],
@@ -112,11 +116,99 @@ export const FunctionsOutput: VMixFunction[] = [
         default: 'Output',
         range: {
           type: 'enum',
-          values: ['Output', 'Preview', 'MultiView', 'Input'],
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
         },
       },
     ],
     version: '21',
+  },
+  {
+    id: 'SetOutput5',
+    category: 'Output',
+    description: 'Change what is displayed on Output 5',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+      {
+        name: 'Value',
+        required: true,
+        default: 'Output',
+        range: {
+          type: 'enum',
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
+        },
+      },
+    ],
+    version: '30',
+  },
+  {
+    id: 'SetOutput6',
+    category: 'Output',
+    description: 'Change what is displayed on Output 6',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+      {
+        name: 'Value',
+        required: true,
+        default: 'Output',
+        range: {
+          type: 'enum',
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
+        },
+      },
+    ],
+    version: '30',
+  },
+  {
+    id: 'SetOutput7',
+    category: 'Output',
+    description: 'Change what is displayed on Output 7',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+      {
+        name: 'Value',
+        required: true,
+        default: 'Output',
+        range: {
+          type: 'enum',
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
+        },
+      },
+    ],
+    version: '30',
+  },
+  {
+    id: 'SetOutput8',
+    category: 'Output',
+    description: 'Change what is displayed on Output 8',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+      {
+        name: 'Value',
+        required: true,
+        default: 'Output',
+        range: {
+          type: 'enum',
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
+        },
+      },
+    ],
+    version: '30',
   },
   {
     id: 'SetOutputExternal2',
@@ -134,7 +226,7 @@ export const FunctionsOutput: VMixFunction[] = [
         default: 'Output',
         range: {
           type: 'enum',
-          values: ['Output', 'Preview', 'MultiView', 'Input'],
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
         },
       },
     ],
@@ -156,7 +248,7 @@ export const FunctionsOutput: VMixFunction[] = [
         default: 'Output',
         range: {
           type: 'enum',
-          values: ['Output', 'Preview', 'MultiView', 'Input'],
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
         },
       },
     ],
@@ -178,7 +270,7 @@ export const FunctionsOutput: VMixFunction[] = [
         default: 'Output',
         range: {
           type: 'enum',
-          values: ['Output', 'Preview', 'MultiView', 'Input'],
+          values: ['Output', 'Preview', 'MultiView', 'Replay', 'Mix', 'Input'],
         },
       },
     ],

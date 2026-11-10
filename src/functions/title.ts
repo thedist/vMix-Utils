@@ -10,12 +10,14 @@ export type FunctionIDsTitle =
   | 'ResumeRender'
   | 'SelectTitlePreset'
   | 'SetColor'
+  | 'SetColour'
   | 'SetCountdown'
   | 'SetImage'
   | 'SetImageVisible'
   | 'SetImageVisibleOff'
   | 'SetImageVisibleOn'
   | 'SetText'
+  | 'SetTextColor'
   | 'SetTextColour'
   | 'SetTextVisible'
   | 'SetTextVisibleOff'
@@ -186,6 +188,24 @@ export const FunctionsTitle: VMixFunction[] = [
     version: '25',
   },
   {
+    id: 'SetColour',
+    category: 'Title',
+    description: 'Change Colour in Title using HTML #xxxxxxxx format',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: true,
+      },
+      {
+        name: 'Value',
+        description: 'Colour',
+        required: true,
+      },
+    ],
+    version: '30',
+  },
+  {
     id: 'SetCountdown',
     category: 'Title',
     description: 'Set countdown duration according to Value as hh:mm:ss (00:00:00)',
@@ -332,6 +352,30 @@ export const FunctionsTitle: VMixFunction[] = [
       },
     ],
     version: '21',
+  },
+  {
+    id: 'SetTextColor',
+    category: 'Title',
+    description: 'Change Color of Text in Title in HTML format (#xxxxxx)',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+      {
+        name: 'Value',
+        description: 'Color',
+        required: false,
+      },
+      {
+        name: 'SelectedIndex',
+        description: 'Index or name of title layer to adjust',
+        default: 0,
+        required: false,
+      },
+    ],
+    version: '30',
   },
   {
     id: 'SetTextColour',

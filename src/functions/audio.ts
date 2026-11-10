@@ -51,24 +51,32 @@ export type FunctionIDsAudio =
   | 'MasterAudioPluginOnOff'
   | 'MasterAudioPluginShow'
   | 'SetBalance'
+  | 'SetBusAGain'
   | 'SetBusAVolume'
   | 'SetBusAVolumeFade'
+  | 'SetBusBGain'
   | 'SetBusBVolume'
   | 'SetBusBVolumeFade'
+  | 'SetBusCGain'
   | 'SetBusCVolume'
   | 'SetBusCVolumeFade'
+  | 'SetBusDGain'
   | 'SetBusDVolume'
   | 'SetBusDVolumeFade'
+  | 'SetBusEGain'
   | 'SetBusEVolume'
   | 'SetBusEVolumeFade'
+  | 'SetBusFGain'
   | 'SetBusFVolume'
   | 'SetBusFVolumeFade'
+  | 'SetBusGGain'
   | 'SetBusGVolume'
   | 'SetBusGVolumeFade'
   | 'SetGain'
   | 'SetGainChannel1'
   | 'SetGainChannel2'
   | 'SetHeadphonesVolume'
+  | 'SetMasterGain'
   | 'SetMasterVolume'
   | 'SetMasterVolumeFade'
   | 'SetVolume'
@@ -408,6 +416,12 @@ export const FunctionsAudio: VMixFunction[] = [
     version: '21',
   },
   {
+    id: 'SetBusAGain',
+    category: 'Audio',
+    params: [{ name: 'Value', description: 'Gain dB 0 to 24', required: true, range: { type: 'number', min: 0, max: 24 } }],
+    version: '30'
+  },
+  {
     id: 'SetBusAVolume',
     category: 'Audio',
     params: [{ name: 'Value', description: 'Volume 0 to 100', required: true, range: { type: 'number', min: 0, max: 100 } }],
@@ -419,6 +433,12 @@ export const FunctionsAudio: VMixFunction[] = [
     description: 'Set volume gradually over x milliseconds',
     params: [{ name: 'Value', description: 'Volume 0 to 100,Milliseconds', required: true }],
     version: '28',
+  },
+  {
+    id: 'SetBusBGain',
+    category: 'Audio',
+    params: [{ name: 'Value', description: 'Gain dB 0 to 24', required: true, range: { type: 'number', min: 0, max: 24 } }],
+    version: '30'
   },
   {
     id: 'SetBusBVolume',
@@ -434,6 +454,12 @@ export const FunctionsAudio: VMixFunction[] = [
     version: '28',
   },
   {
+    id: 'SetBusCGain',
+    category: 'Audio',
+    params: [{ name: 'Value', description: 'Gain dB 0 to 24', required: true, range: { type: 'number', min: 0, max: 24 } }],
+    version: '30'
+  },
+  {
     id: 'SetBusCVolume',
     category: 'Audio',
     params: [{ name: 'Value', description: 'Volume 0 to 100', required: true, range: { type: 'number', min: 0, max: 100 } }],
@@ -445,6 +471,12 @@ export const FunctionsAudio: VMixFunction[] = [
     description: 'Set volume gradually over x milliseconds',
     params: [{ name: 'Value', description: 'Volume 0 to 100,Milliseconds', required: true }],
     version: '28',
+  },
+  {
+    id: 'SetBusDGain',
+    category: 'Audio',
+    params: [{ name: 'Value', description: 'Gain dB 0 to 24', required: true, range: { type: 'number', min: 0, max: 24 } }],
+    version: '30'
   },
   {
     id: 'SetBusDVolume',
@@ -460,6 +492,12 @@ export const FunctionsAudio: VMixFunction[] = [
     version: '28',
   },
   {
+    id: 'SetBusEGain',
+    category: 'Audio',
+    params: [{ name: 'Value', description: 'Gain dB 0 to 24', required: true, range: { type: 'number', min: 0, max: 24 } }],
+    version: '30'
+  },
+  {
     id: 'SetBusEVolume',
     category: 'Audio',
     params: [{ name: 'Value', description: 'Volume 0 to 100', required: true, range: { type: 'number', min: 0, max: 100 } }],
@@ -473,6 +511,12 @@ export const FunctionsAudio: VMixFunction[] = [
     version: '28',
   },
   {
+    id: 'SetBusFGain',
+    category: 'Audio',
+    params: [{ name: 'Value', description: 'Gain dB 0 to 24', required: true, range: { type: 'number', min: 0, max: 24 } }],
+    version: '30'
+  },
+  {
     id: 'SetBusFVolume',
     category: 'Audio',
     params: [{ name: 'Value', description: 'Volume 0 to 100', required: true, range: { type: 'number', min: 0, max: 100 } }],
@@ -484,6 +528,12 @@ export const FunctionsAudio: VMixFunction[] = [
     description: 'Set volume gradually over x milliseconds',
     params: [{ name: 'Value', description: 'Volume 0 to 100,Milliseconds', required: true }],
     version: '28',
+  },
+  {
+    id: 'SetBusGGain',
+    category: 'Audio',
+    params: [{ name: 'Value', description: 'Gain dB 0 to 24', required: true, range: { type: 'number', min: 0, max: 24 } }],
+    version: '30'
   },
   {
     id: 'SetBusGVolume',
@@ -530,6 +580,12 @@ export const FunctionsAudio: VMixFunction[] = [
     category: 'Audio',
     params: [{ name: 'Value', description: 'Volume 0 to 100', required: true, range: { type: 'number', min: 0, max: 100 } }],
     version: '21',
+  },
+  {
+    id: 'SetMasterGain',
+    category: 'Audio',
+    params: [{ name: 'Value', description: 'Gain dB 0 to 24', required: true, range: { type: 'number', min: 0, max: 24 } }],
+    version: '30'
   },
   {
     id: 'SetMasterVolume',

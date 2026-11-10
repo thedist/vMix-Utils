@@ -15,6 +15,8 @@ export type FunctionIDsInput =
   | 'AutoPlayOn'
   | 'AutoRestartOff'
   | 'AutoRestartOn'
+  | 'ColorCorrectionAuto'
+  | 'ColorCorrectionReset'
   | 'ColourCorrectionAuto'
   | 'ColourCorrectionReset'
   | 'CreateVirtualInput'
@@ -41,6 +43,15 @@ export type FunctionIDsInput =
   | 'LayerOnOff'
   | 'ListAdd'
   | 'ListExport'
+  | 'ListItemDisable'
+  | 'ListItemDisableHighlighted'
+  | 'ListItemEnable'
+  | 'ListItemEnableHighlighted'
+  | 'ListItemHighlight'
+  | 'ListItemHighlightNext'
+  | 'ListItemHighlightPrevious'
+  | 'ListItemSelectHighlighted'
+  | 'ListItemToggleHighlighted'
   | 'ListPlayOut'
   | 'ListRemove'
   | 'ListRemoveAll'
@@ -240,6 +251,7 @@ export type FunctionIDsInput =
   | 'SetLayer10Y'
   | 'SetLayer10Zoom'
   | 'SetLayerAnimated'
+  | 'SetLayerDynamic'
   | 'SetLayerDynamicCrop'
   | 'SetLayerDynamicCropX1'
   | 'SetLayerDynamicCropX2'
@@ -464,6 +476,32 @@ export const FunctionsInput: VMixFunction[] = [
       },
     ],
     version: '21',
+  },
+  {
+    id: 'ColorCorrectionAuto',
+    category: 'Input',
+    description: 'Basic Auto Color Correction',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '30',
+  },
+  {
+    id: 'ColorCorrectionReset',
+    category: 'Input',
+    description: 'Reset Color Correction to Default Values',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+    ],
+    version: '30',
   },
   {
     id: 'ColourCorrectionAuto',
@@ -807,6 +845,91 @@ export const FunctionsInput: VMixFunction[] = [
       },
     ],
     version: '21',
+  },
+  {
+    id: 'ListItemDisable',
+    category: 'Input',
+    description: 'Disable item in List by Index starting from 1',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+      {
+        name: 'Value',
+        description: 'Index',
+        required: false,
+      },
+    ],
+    version: '30',
+  },
+  {
+    id: 'ListItemDisableHighlighted',
+    category: 'Input',
+    description: 'Disable highlighted item(s) in List',
+    params: [{ name: 'Input', default: 'Preview', required: false }],
+    version: '30',
+  },
+  {
+    id: 'ListItemEnable',
+    category: 'Input',
+    description: 'Enable item in List by Index starting from 1',
+    params: [
+      {
+        name: 'Input',
+        default: 'Preview',
+        required: false,
+      },
+      {
+        name: 'Value',
+        description: 'Index',
+        required: false,
+      },
+    ],
+    version: '30',
+  },
+  {
+    id: 'ListItemEnableHighlighted',
+    category: 'Input',
+    description: 'Enable highlighted item(s) in List',
+    params: [{ name: 'Input', default: 'Preview', required: false }],
+    version: '30',
+  },
+  {
+    id: 'ListItemHighlight',
+    category: 'Input',
+    description: 'Highlight item in List by Index starting from 1',
+    params: [{ name: 'Value', description: 'Index', required: false }],
+    version: '30',
+  },
+  {
+    id: 'ListItemHighlightNext',
+    category: 'Input',
+    description: 'Move highlighted item to next in List',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ListItemHighlightPrevious',
+    category: 'Input',
+    description: 'Move highlighted item to previous in List',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ListItemSelectHighlighted',
+    category: 'Input',
+    description: 'Select first highlighted item in List',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ListItemToggleHighlighted',
+    category: 'Input',
+    description: 'Toggle Enable/Disable for highlighted item(s) in List',
+    params: [{ name: 'Input', default: 'Preview', required: false }],
+    version: '30',
   },
   {
     id: 'ListExport',
@@ -4320,6 +4443,24 @@ export const FunctionsInput: VMixFunction[] = [
       },
     ],
     version: '27',
+  },
+  {
+    id: 'SetLayerDynamic',
+    category: 'Input',
+    description: 'Change Input Layer number in DynamicValue1 (1-10) to Input',
+    params: [
+      {
+        name: 'Input',
+        description: 'Input',
+        required: true,
+      },
+      {
+        name: 'Value',
+        description: 'Input',
+        required: true,
+      },
+    ],
+    version: '30',
   },
   {
     id: 'SetLayerDynamicCrop',

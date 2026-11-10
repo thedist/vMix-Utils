@@ -9,6 +9,14 @@ export type FunctionIDsReplay =
   | 'ReplayACamera6'
   | 'ReplayACamera7'
   | 'ReplayACamera8'
+  | 'ReplayACamera9'
+  | 'ReplayACamera10'
+  | 'ReplayACamera11'
+  | 'ReplayACamera12'
+  | 'ReplayACamera13'
+  | 'ReplayACamera14'
+  | 'ReplayACamera15'
+  | 'ReplayACamera16'
   | 'ReplayAppendLastEventText'
   | 'ReplayAppendLastEventTextCamera'
   | 'ReplayAppendSelectedEventText'
@@ -21,6 +29,14 @@ export type FunctionIDsReplay =
   | 'ReplayBCamera6'
   | 'ReplayBCamera7'
   | 'ReplayBCamera8'
+  | 'ReplayBCamera9'
+  | 'ReplayBCamera10'
+  | 'ReplayBCamera11'
+  | 'ReplayBCamera12'
+  | 'ReplayBCamera13'
+  | 'ReplayBCamera14'
+  | 'ReplayBCamera15'
+  | 'ReplayBCamera16'
   | 'ReplayCamera1'
   | 'ReplayCamera2'
   | 'ReplayCamera3'
@@ -29,6 +45,14 @@ export type FunctionIDsReplay =
   | 'ReplayCamera6'
   | 'ReplayCamera7'
   | 'ReplayCamera8'
+  | 'ReplayCamera9'
+  | 'ReplayCamera10'
+  | 'ReplayCamera11'
+  | 'ReplayCamera12'
+  | 'ReplayCamera13'
+  | 'ReplayCamera14'
+  | 'ReplayCamera15'
+  | 'ReplayCamera16'
   | 'ReplayCCamera1'
   | 'ReplayCCamera2'
   | 'ReplayCCamera3'
@@ -37,6 +61,14 @@ export type FunctionIDsReplay =
   | 'ReplayCCamera6'
   | 'ReplayCCamera7'
   | 'ReplayCCamera8'
+  | 'ReplayCCamera9'
+  | 'ReplayCCamera10'
+  | 'ReplayCCamera11'
+  | 'ReplayCCamera12'
+  | 'ReplayCCamera13'
+  | 'ReplayCCamera14'
+  | 'ReplayCCamera15'
+  | 'ReplayCCamera16'
   | 'ReplayChangeDirection'
   | 'ReplayChangeSpeed'
   | 'ReplayCopyLastEvent'
@@ -49,14 +81,27 @@ export type FunctionIDsReplay =
   | 'ReplayDCamera6'
   | 'ReplayDCamera7'
   | 'ReplayDCamera8'
+  | 'ReplayDCamera9'
+  | 'ReplayDCamera10'
+  | 'ReplayDCamera11'
+  | 'ReplayDCamera12'
+  | 'ReplayDCamera13'
+  | 'ReplayDCamera14'
+  | 'ReplayDCamera15'
+  | 'ReplayDCamera16'
   | 'ReplayDeleteLastEvent'
   | 'ReplayDeleteSelectedEvent'
   | 'ReplayDuplicateLastEvent'
   | 'ReplayDuplicateSelectedEvent'
+  | 'ReplayExportAllEvents'
   | 'ReplayExportLastEvent'
+  | 'ReplayExportSelectedEvents'
   | 'ReplayFastBackward'
   | 'ReplayFastForward'
   | 'ReplayJumpFrames'
+  | 'ReplayJumpFramesAcceleratedFast'
+  | 'ReplayJumpFramesAcceleratedMedium'
+  | 'ReplayJumpFramesAcceleratedSlow'
   | 'ReplayJumpFramesFastOff'
   | 'ReplayJumpFramesFastOn'
   | 'ReplayJumpToNow'
@@ -131,6 +176,7 @@ export type FunctionIDsReplay =
   | 'ReplaySelectEvents18'
   | 'ReplaySelectEvents19'
   | 'ReplaySelectEvents20'
+  | 'ReplaySelectEventsByID'
   | 'ReplaySelectFirstEvent'
   | 'ReplaySelectLastEvent'
   | 'ReplaySelectNextEvent'
@@ -142,6 +188,8 @@ export type FunctionIDsReplay =
   | 'ReplaySetChannelBToATimecodeAndCamera'
   | 'ReplaySetDirectionBackward'
   | 'ReplaySetDirectionForward'
+  | 'ReplaySetEventCamerasByID'
+  | 'ReplaySetEventTextCameraByID'
   | 'ReplaySetLastEventText'
   | 'ReplaySetLastEventTextCamera'
   | 'ReplaySetSelectedEventText'
@@ -162,6 +210,14 @@ export type FunctionIDsReplay =
   | 'ReplayToggleLastEventCamera6'
   | 'ReplayToggleLastEventCamera7'
   | 'ReplayToggleLastEventCamera8'
+  | 'ReplayToggleLastEventCamera9'
+  | 'ReplayToggleLastEventCamera10'
+  | 'ReplayToggleLastEventCamera11'
+  | 'ReplayToggleLastEventCamera12'
+  | 'ReplayToggleLastEventCamera13'
+  | 'ReplayToggleLastEventCamera14'
+  | 'ReplayToggleLastEventCamera15'
+  | 'ReplayToggleLastEventCamera16'
   | 'ReplayToggleQuadMode'
   | 'ReplayToggleSelectedEventCamera1'
   | 'ReplayToggleSelectedEventCamera2'
@@ -171,6 +227,14 @@ export type FunctionIDsReplay =
   | 'ReplayToggleSelectedEventCamera6'
   | 'ReplayToggleSelectedEventCamera7'
   | 'ReplayToggleSelectedEventCamera8'
+  | 'ReplayToggleSelectedEventCamera9'
+  | 'ReplayToggleSelectedEventCamera10'
+  | 'ReplayToggleSelectedEventCamera11'
+  | 'ReplayToggleSelectedEventCamera12'
+  | 'ReplayToggleSelectedEventCamera13'
+  | 'ReplayToggleSelectedEventCamera14'
+  | 'ReplayToggleSelectedEventCamera15'
+  | 'ReplayToggleSelectedEventCamera16'
   | 'ReplayUpdateSelectedInPoint'
   | 'ReplayUpdateSelectedOutPoint'
   | 'ReplayUpdateSelectedSpeed'
@@ -225,6 +289,54 @@ export const FunctionsReplay: VMixFunction[] = [
     category: 'Replay',
     params: [],
     version: '24',
+  },
+  {
+    id: 'ReplayACamera9',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayACamera10',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayACamera11',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayACamera12',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayACamera13',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayACamera14',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayACamera15',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayACamera16',
+    category: 'Replay',
+    params: [],
+    version: '30',
   },
   {
     id: 'ReplayAppendLastEventText',
@@ -325,52 +437,148 @@ export const FunctionsReplay: VMixFunction[] = [
     version: '24',
   },
   {
+    id: 'ReplayBCamera9',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayBCamera10',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayBCamera11',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayBCamera12',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayBCamera13',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayBCamera14',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayBCamera15',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayBCamera16',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
     id: 'ReplayCamera1',
     category: 'Replay',
     params: [],
-    version: 'ReplayACamera5',
+    version: '21',
   },
   {
     id: 'ReplayCamera2',
     category: 'Replay',
     params: [],
-    version: 'ReplayACamera5',
+    version: '21',
   },
   {
     id: 'ReplayCamera3',
     category: 'Replay',
     params: [],
-    version: 'ReplayACamera5',
+    version: '21',
   },
   {
     id: 'ReplayCamera4',
     category: 'Replay',
     params: [],
-    version: 'ReplayACamera5',
+    version: '21',
   },
   {
     id: 'ReplayCamera5',
     category: 'Replay',
     params: [],
-    version: 'ReplayACamera5',
+    version: '24',
   },
   {
     id: 'ReplayCamera6',
     category: 'Replay',
     params: [],
-    version: 'ReplayACamera5',
+    version: '24',
   },
   {
     id: 'ReplayCamera7',
     category: 'Replay',
     params: [],
-    version: 'ReplayACamera5',
+    version: '24',
   },
   {
     id: 'ReplayCamera8',
     category: 'Replay',
     params: [],
-    version: 'ReplayACamera5',
+    version: '24',
+  },
+  {
+    id: 'ReplayCamera9',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCamera10',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCamera11',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCamera12',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCamera13',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCamera14',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCamera15',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCamera16',
+    category: 'Replay',
+    params: [],
+    version: '30',
   },
   {
     id: 'ReplayCCamera1',
@@ -419,6 +627,54 @@ export const FunctionsReplay: VMixFunction[] = [
     category: 'Replay',
     params: [],
     version: '29',
+  },
+  {
+    id: 'ReplayCCamera9',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCCamera10',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCCamera11',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCCamera12',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCCamera13',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCCamera14',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCCamera15',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayCCamera16',
+    category: 'Replay',
+    params: [],
+    version: '30',
   },
   {
     id: 'ReplayChangeDirection',
@@ -543,6 +799,54 @@ export const FunctionsReplay: VMixFunction[] = [
     version: '29',
   },
   {
+    id: 'ReplayDCamera9',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayDCamera10',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayDCamera11',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayDCamera12',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayDCamera13',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayDCamera14',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayDCamera15',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayDCamera16',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
     id: 'ReplayDeleteLastEvent',
     category: 'Replay',
     params: [
@@ -607,6 +911,28 @@ export const FunctionsReplay: VMixFunction[] = [
     version: '24',
   },
   {
+    id: 'ReplayExportAllEvents',
+    category: 'Replay',
+    description: 'Export all Events in the active list',
+    params: [
+      {
+        name: 'Channel',
+        required: true,
+        default: 'Current',
+        range: {
+          type: 'enum',
+          values: ['Current', 'A', 'B'],
+        },
+      },
+      {
+        name: 'Value',
+        description: 'Folder',
+        required: false,
+      },
+    ],
+    version: '30',
+  },
+  {
     id: 'ReplayExportLastEvent',
     category: 'Replay',
     params: [
@@ -626,6 +952,28 @@ export const FunctionsReplay: VMixFunction[] = [
       },
     ],
     version: '21',
+  },
+  {
+    id: 'ReplayExportSelectedEvents',
+    category: 'Replay',
+    description: 'Export selected Events in the active list',
+    params: [
+      {
+        name: 'Channel',
+        required: true,
+        default: 'Current',
+        range: {
+          type: 'enum',
+          values: ['Current', 'A', 'B'],
+        },
+      },
+      {
+        name: 'Value',
+        description: 'Folder',
+        required: false,
+      },
+    ],
+    version: '30',
   },
   {
     id: 'ReplayFastBackward',
@@ -704,6 +1052,81 @@ export const FunctionsReplay: VMixFunction[] = [
       },
     ],
     version: '21',
+  },
+  {
+    id: 'ReplayJumpFramesAcceleratedFast',
+    category: 'Replay',
+    description: 'Jump frames where the quicker this shortcut is called, the higher the jump',
+    params: [
+      {
+        name: 'Channel',
+        required: true,
+        default: 'Current',
+        range: {
+          type: 'enum',
+          values: ['Current', 'A', 'B'],
+        },
+      },
+      {
+        name: 'Value',
+        description: 'Frames',
+        required: false,
+        range: {
+          type: 'int',
+        },
+      },
+    ],
+    version: '30',
+  },
+  {
+    id: 'ReplayJumpFramesAcceleratedMedium',
+    category: 'Replay',
+    description: 'Jump frames where the quicker this shortcut is called, the higher the jump',
+    params: [
+      {
+        name: 'Channel',
+        required: true,
+        default: 'Current',
+        range: {
+          type: 'enum',
+          values: ['Current', 'A', 'B'],
+        },
+      },
+      {
+        name: 'Value',
+        description: 'Frames',
+        required: false,
+        range: {
+          type: 'int',
+        },
+      },
+    ],
+    version: '30',
+  },
+  {
+    id: 'ReplayJumpFramesAcceleratedSlow',
+    category: 'Replay',
+    description: 'Jump frames where the quicker this shortcut is called, the higher the jump',
+    params: [
+      {
+        name: 'Channel',
+        required: true,
+        default: 'Current',
+        range: {
+          type: 'enum',
+          values: ['Current', 'A', 'B'],
+        },
+      },
+      {
+        name: 'Value',
+        description: 'Frames',
+        required: false,
+        range: {
+          type: 'int',
+        },
+      },
+    ],
+    version: '30',
   },
   {
     id: 'ReplayJumpFramesFastOff',
@@ -1767,6 +2190,13 @@ export const FunctionsReplay: VMixFunction[] = [
     version: '24',
   },
   {
+    id: 'ReplaySelectEventsByID',
+    category: 'Replay',
+    description: 'Select one or more events based on ID',
+    params: [{ name: 'Value', description: 'List of IDs', required: false }],
+    version: '24',
+  },
+  {
     id: 'ReplaySelectFirstEvent',
     category: 'Replay',
     params: [
@@ -1902,6 +2332,32 @@ export const FunctionsReplay: VMixFunction[] = [
       },
     ],
     version: '21',
+  },
+  {
+    id: 'ReplaySetEventCamerasByID',
+    category: 'Replay',
+    description: 'Turn on only the specified camera angles for the event matching ID',
+    params: [
+      {
+        name: 'Value',
+        description: 'ID,List of camera angles (1-8)',
+        required: false,
+      },
+    ],
+    version: '30',
+  },
+  {
+    id: 'ReplaySetEventTextCameraByID',
+    category: 'Replay',
+    description: 'Changes the text of the specified angle (1-4), example: 001,3,angle3text',
+    params: [
+      {
+        name: 'Value',
+        description: 'ID,Camera,Text',
+        required: false,
+      },
+    ],
+    version: '30',
   },
   {
     id: 'ReplaySetLastEventText',
@@ -2088,6 +2544,54 @@ export const FunctionsReplay: VMixFunction[] = [
     version: '24',
   },
   {
+    id: 'ReplayToggleLastEventCamera9',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleLastEventCamera10',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleLastEventCamera11',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleLastEventCamera12',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleLastEventCamera13',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleLastEventCamera14',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleLastEventCamera15',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleLastEventCamera16',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
     id: 'ReplayToggleQuadMode',
     category: 'Replay',
     params: [],
@@ -2140,6 +2644,54 @@ export const FunctionsReplay: VMixFunction[] = [
     category: 'Replay',
     params: [],
     version: '24',
+  },
+  {
+    id: 'ReplayToggleSelectedEventCamera9',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleSelectedEventCamera10',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleSelectedEventCamera11',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleSelectedEventCamera12',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleSelectedEventCamera13',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleSelectedEventCamera14',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleSelectedEventCamera15',
+    category: 'Replay',
+    params: [],
+    version: '30',
+  },
+  {
+    id: 'ReplayToggleSelectedEventCamera16',
+    category: 'Replay',
+    params: [],
+    version: '30',
   },
   {
     id: 'ReplayUpdateSelectedInPoint',

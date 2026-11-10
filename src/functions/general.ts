@@ -9,6 +9,10 @@ export type FunctionIDsGeneral =
   | 'SetDynamicValue2'
   | 'SetDynamicValue3'
   | 'SetDynamicValue4'
+  | 'SetProductionClock1Message'
+  | 'SetProductionClock1Type'
+  | 'SetProductionClock2Message'
+  | 'SetProductionClock2Type'
   | 'Undo'
 
 export const FunctionsGeneral: VMixFunction[] = [
@@ -70,6 +74,34 @@ export const FunctionsGeneral: VMixFunction[] = [
     description: 'Set Dynamic Value to use when specifying Dynamic4 as a shortcut value',
     params: [{ name: 'Value', default: '', description: 'Value', required: false }],
     version: '24',
+  },
+  {
+    id: 'SetProductionClock1Message',
+    category: 'General',
+    description: 'Set Production Clock 1 to display selected Message',
+    params: [{ name: 'Value', default: '', description: 'Message', required: false }],
+    version: '30'
+  },
+  {
+    id: 'SetProductionClock1Type',
+    category: 'General',
+    description: 'Set Production Clock 1 to Type specified in Value',
+    params: [{ name: 'Value', default: '', description: 'Clock, Event, Recording, Streaming, TimeRemaining, Message', required: false }],
+    version: '30'
+  },
+  {
+    id: 'SetProductionClock2Message',
+    category: 'General',
+    description: 'Set Production Clock 2 to display selected Message',
+    params: [{ name: 'Value', default: '', description: 'Message', required: false }],
+    version: '30'
+  },
+  {
+    id: 'SetProductionClock2Type',
+    category: 'General',
+    description: 'Set Production Clock 2 to Type specified in Value',
+    params: [{ name: 'Value', default: '', description: 'Clock, Event, Recording, Streaming, TimeRemaining, Message', required: false }],
+    version: '30'
   },
   {
     id: 'Undo',
